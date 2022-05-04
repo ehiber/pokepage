@@ -1,3 +1,55 @@
 /* 
     General Styles
 */
+
+.navbar-pokemon {
+    background: linear-gradient(rgb(226, 46, 14) 0%, rgb(248, 248, 238), rgb(231, 235, 11) 100%);
+}
+
+.carousel-pokemon{
+    height: 500px;
+}
+
+.footer {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-search-pokemon{
+    position: relative;
+}
+
+.label-search-pokemon:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    color: black;
+    margin-top: -5px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg") center / contain no-repeat;
+  }
+  
+.search-pokemon {
+    padding: 5px 10px 5px 30px;
+    border: none;
+    background-color: rgba(211, 213, 37, 0.816);
+    border-radius: 10px;
+    margin-left: 5px;
+    max-width: 200px;
+}
+
+.search-pokemon:focus {
+    background-color: whitesmoke;
+}
+
+.search-pokemon:focus::placeholder {
+    color: rgba(211, 213, 37, 0.816);
+}
+
+.search-pokemon::placeholder{
+    border-bottom: 1px solid gainsboro;
+}

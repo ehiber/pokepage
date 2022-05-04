@@ -22,6 +22,10 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
+			state.actions.getPokemons()
+			// if( state.store.pokemons.length === 20){
+			// 	state.actions.getPokemonsWithImages()
+			// }
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only runs once on the entire application lifetime
@@ -31,7 +35,7 @@ const injectContext = PassedComponent => {
 			 * state.actions.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
 			 **/
-		}, []);
+		}, [state.store.pokemons]);
 
 		// The initial value for the context is not null anymore, but the current state of this component,
 		// the context will now have a getStore, getActions and setStore functions available, because they were declared
